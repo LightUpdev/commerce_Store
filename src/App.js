@@ -38,6 +38,7 @@ function App() {
   const removeCartItem = async (productId) => {
     const data = await commerce.cart.remove(productId);
     setCart(data);
+    data && toast.danger(`product remove from cart`);
   };
 
   const decreaseCartItem = async (productId, qty) => {
@@ -48,6 +49,7 @@ function App() {
   const emptyCart = async () => {
     const data = await commerce.cart.empty();
     setCart(data);
+    data && toast.info(`All cart items cleared successfully`);
   };
 
   useEffect(() => {
