@@ -18,15 +18,21 @@
   right: 2.2rem;
 }
 
-.cart-btn{
-  border:none;
+.cart-btn {
+  border: none;
   outline: none;
   background: none;
 }
 
-.no-cart-item-btn{
+.no-cart-item-btn {
   justify-content: center;
   display: flex;
   align-items: center;
   text-decoration: none;
+}
+.product-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
